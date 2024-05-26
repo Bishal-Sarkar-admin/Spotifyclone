@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify Clone</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Spotify Clone</h1>
-      <button id="login-button" class="login-button">
-        Log in with Spotify
-      </button>
-      <div id="user-info"></div>
-      <div id="playlists"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Spotify Clone</h2>
+    <ul>
+      <li><a href="#" id="home-link">Home</a></li>
+      <li><a href="#" id="search-link">Search</a></li>
+      <li><a href="#" id="library-link">Your Library</a></li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <div class="header">
+      <input type="text" id="search-input" placeholder="Search for music" />
+      <button id="login-button" class="login-button">Log in with Spotify</button>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <div id="user-info"></div>
+    <div id="playlists"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
