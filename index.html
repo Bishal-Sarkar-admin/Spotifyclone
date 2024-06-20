@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Auth Redirect</title>
+  <script>
+    // Extract the authorization code from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const authorizationCode = urlParams.get('code');
+
+    // Display the authorization code for now
+    document.addEventListener('DOMContentLoaded', () => {
+      const codeDisplay = document.getElementById('code-display');
+      if (authorizationCode) {
+        codeDisplay.textContent = `Authorization Code: ${authorizationCode}`;
+      } else {
+        codeDisplay.textContent = 'No authorization code found.';
+      }
+    });
+  </script>
+</head>
+<body>
+  <h1>Spotify Auth Redirect</h1>
+  <p id="code-display"></p>
+</body>
+</html>
